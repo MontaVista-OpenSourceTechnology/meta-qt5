@@ -15,7 +15,19 @@ PACKAGES = " \
          packagegroup-profile-graphics-misc \
          packagegroup-profile-graphics-gstreamer \
          packagegroup-profile-graphics-mesa \
+         packagegroup-profile-graphics-qt5-demos \
 "
+
+RDEPENDS_packagegroup-profile-graphics = " \
+         packagegroup-profile-graphics-qt5 \
+         packagegroup-profile-graphics-clutter \ 
+         packagegroup-profile-graphics-base \
+         packagegroup-profile-graphics-sound \
+         packagegroup-profile-graphics-misc \
+         packagegroup-profile-graphics-gstreamer \
+         packagegroup-profile-graphics-mesa \
+         packagegroup-profile-graphics-qt5-demos \
+" 
 
 RDEPENDS_packagegroup-profile-graphics-mesa = " \
 	mesa-demos \
@@ -41,6 +53,21 @@ RDEPENDS_packagegroup-profile-graphics-gstreamer = " \
 RDEPENDS_packagegroup-profile-graphics-base = " \
          packagegroup-core-x11-xserver \
          packagegroup-core-x11 \
+         xterm \
+         xclock \
+         twm \
+         matchbox-desktop \
+         matchbox-wm \
+         matchbox-session-sato \
+         matchbox-keyboard \
+         matchbox-keyboard-applet \
+         matchbox-keyboard-im \
+         matchbox-config-gtk \
+"
+
+RRECOMMENDS_packagegroup-profile-graphics-base = " \
+         xf86-video-modesetting \
+         xserver-xorg-extension-glx \
 "
 
 RDEPENDS_packagegroup-profile-graphics-clutter = " \
@@ -73,21 +100,21 @@ RDEPENDS_packagegroup-profile-graphics-qt5 = " \
 	qtconnectivity-qmlplugins \
 	qtlocation-plugins \
 	qtlocation-qmlplugins \
-	qt5nmapper \
-	qt5everywheredemo \
-	qtwebkit-examples \
 	qtwebkit \
-	qt5-demo-extrafiles \
 	qtimageformats \
 "
 
+RDEPENDS_packagegroup-profile-graphics-qt5-demos = " \
+	cinematicexperience \
+	qt5everywheredemo \
+	qt5ledscreen \
+	qt5nmapcarousedemo \
+	qt5nmapper \
+	qtsmarthome \
+	quitbattery \
+	quitindicators \
+	qtwebkit-examples \
+        qt5-demo-extrafiles \
+"
 
 
-RDEPENDS_packagegroup-profile-graphics = " \
-         packagegroup-profile-graphics-qt5 \
-         packagegroup-profile-graphics-clutter \ 
-         packagegroup-profile-graphics-base \
-         packagegroup-profile-graphics-sound \
-         packagegroup-profile-graphics-misc \
-         packagegroup-profile-graphics-gstreamer \
-" 
