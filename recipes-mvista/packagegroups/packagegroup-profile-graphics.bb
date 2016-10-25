@@ -31,6 +31,7 @@ RDEPENDS_packagegroup-profile-graphics = " \
 
 RDEPENDS_packagegroup-profile-graphics-mesa = " \
 	mesa-demos \
+	mesa-megadriver \
 "
 
 RDEPENDS_packagegroup-profile-graphics-misc = " \
@@ -63,6 +64,7 @@ RDEPENDS_packagegroup-profile-graphics-base = " \
          matchbox-keyboard-applet \
          matchbox-keyboard-im \
          matchbox-config-gtk \
+	 matchbox-terminal \
 "
 
 RRECOMMENDS_packagegroup-profile-graphics-base = " \
