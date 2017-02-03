@@ -48,7 +48,7 @@ GST_COMM = " \
 "
 
 RDEPENDS_packagegroup-profile-graphics-gstreamer = " \
-        ${@base_contains("LICENSE_FLAGS_WHITELIST", "commercial", "${GST_COMM}","",d)} \
+        ${@bb.utils.contains("LICENSE_FLAGS_WHITELIST", "commercial", "${GST_COMM}","",d)} \
 "
 RDEPENDS_packagegroup-profile-graphics-base = " \
          packagegroup-core-x11-xserver \
