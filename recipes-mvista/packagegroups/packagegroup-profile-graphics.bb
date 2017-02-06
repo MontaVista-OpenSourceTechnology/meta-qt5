@@ -16,6 +16,7 @@ PACKAGES = " \
          packagegroup-profile-graphics-gstreamer \
          packagegroup-profile-graphics-mesa \
          packagegroup-profile-graphics-qt5-demos \
+         packagegroup-profile-graphics-gtk-demos \
 "
 
 RDEPENDS_packagegroup-profile-graphics = " \
@@ -27,6 +28,7 @@ RDEPENDS_packagegroup-profile-graphics = " \
          packagegroup-profile-graphics-gstreamer \
          packagegroup-profile-graphics-mesa \
          packagegroup-profile-graphics-qt5-demos \
+         packagegroup-profile-graphics-gtk-demos \
 " 
 
 RDEPENDS_packagegroup-profile-graphics-mesa = " \
@@ -119,4 +121,7 @@ RDEPENDS_packagegroup-profile-graphics-qt5-demos = " \
         qt5-demo-extrafiles \
 "
 
-
+RDEPENDS_packagegroup-profile-graphics-gtk-demos = " \
+	gtk+3-demo \
+	gtk-demo \
+"
