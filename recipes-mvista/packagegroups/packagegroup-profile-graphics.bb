@@ -84,7 +84,6 @@ RDEPENDS_packagegroup-profile-graphics-qt5 = " \
 	qtbase-plugins \
 	qtbase-tools \
 	qtdeclarative \
-	qtdeclarative-plugins \
 	qtdeclarative-tools \
 	qtdeclarative-qmlplugins \
 	qtmultimedia \
