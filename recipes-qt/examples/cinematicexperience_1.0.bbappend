@@ -1,4 +1,1 @@
-PR .= ".1"
-
-inherit multilib_script
-MULTILIB_SCRIPTS = "${PN}:${bindir}/Qt5_CinematicExperience"
+require ${@bb.utils.contains('DISTRO_FEATURES', 'mvista-graphics', '${BPN}_mvista.inc', '', d)}
