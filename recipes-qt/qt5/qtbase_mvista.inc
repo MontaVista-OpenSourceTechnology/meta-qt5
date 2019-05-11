@@ -5,10 +5,14 @@ inherit multilib_script
 MULTILIB_SCRIPTS = "${PN}-tools:${bindir}/qt.conf"
 
 pkg_postinst_${PN}-tools () {
+QTFILE=$D${bindir}/qt.conf
+if [ -e "$D${bindir}/qt.conf-${MULTILIB_SUFFIX}" ] ; then
+   QTFILE=$D${bindir}/qt.conf-${MULTILIB_SUFFIX}
+fi
 sed -i \
     -e 's:HostSpec =.*:HostSpec = ${TARGET_MKSPEC}:g' \
     -e 's:TargetSpec =.*:TargetSpec = ${TARGET_MKSPEC}:g' \
-    $D${bindir}/qt.conf-${MULTILIB_SUFFIX}
+    $QTFILE
 }
 
 pkg_postinst_${PN}-mkspecs () {
