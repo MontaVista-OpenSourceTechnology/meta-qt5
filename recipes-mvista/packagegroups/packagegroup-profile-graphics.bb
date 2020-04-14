@@ -116,7 +116,6 @@ RDEPENDS_packagegroup-profile-graphics-qt5-demos = " \
 	qtsmarthome \
 	quitbattery \
 	quitindicators \
-	qtwebkit-examples \
         qt5-demo-extrafiles \
 "
 
