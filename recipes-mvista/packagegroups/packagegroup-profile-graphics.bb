@@ -19,7 +19,7 @@ PACKAGES = " \
          packagegroup-profile-graphics-gtk-demos \
 "
 
-RDEPENDS_packagegroup-profile-graphics = " \
+RDEPENDS:packagegroup-profile-graphics = " \
          packagegroup-profile-graphics-qt5 \
          packagegroup-profile-graphics-clutter \ 
          packagegroup-profile-graphics-base \
@@ -31,15 +31,15 @@ RDEPENDS_packagegroup-profile-graphics = " \
          packagegroup-profile-graphics-gtk-demos \
 " 
 
-RDEPENDS_packagegroup-profile-graphics-mesa = " \
+RDEPENDS:packagegroup-profile-graphics-mesa = " \
 	mesa-demos \
 	mesa-megadriver \
 "
 
-RDEPENDS_packagegroup-profile-graphics-misc = " \
+RDEPENDS:packagegroup-profile-graphics-misc = " \
 	ruby \
 "
-RDEPENDS_packagegroup-profile-graphics-sound = " \
+RDEPENDS:packagegroup-profile-graphics-sound = " \
 	alsa-state \
 	alsa-tools \
 "
@@ -50,10 +50,10 @@ GST_COMM = " \
 	gstreamer1.0-plugins-ugly \
 "
 
-RDEPENDS_packagegroup-profile-graphics-gstreamer = " \
+RDEPENDS:packagegroup-profile-graphics-gstreamer = " \
         ${@bb.utils.contains("LICENSE_FLAGS_WHITELIST", "commercial", "${GST_COMM}","",d)} \
 "
-RDEPENDS_packagegroup-profile-graphics-base = " \
+RDEPENDS:packagegroup-profile-graphics-base = " \
          packagegroup-core-x11-xserver \
          packagegroup-core-x11 \
          xterm \
@@ -69,17 +69,17 @@ RDEPENDS_packagegroup-profile-graphics-base = " \
 	 matchbox-terminal \
 "
 
-RRECOMMENDS_packagegroup-profile-graphics-base = " \
+RRECOMMENDS:packagegroup-profile-graphics-base = " \
          xf86-video-modesetting \
          xserver-xorg-extension-glx \
 "
 
-RDEPENDS_packagegroup-profile-graphics-clutter = " \
+RDEPENDS:packagegroup-profile-graphics-clutter = " \
          packagegroup-core-clutter-core \
          clutter-1.0-examples \
 "
 
-RDEPENDS_packagegroup-profile-graphics-qt5 = " \
+RDEPENDS:packagegroup-profile-graphics-qt5 = " \
 	packagegroup-qt5-toolchain-target \
 	qtbase-plugins \
 	qtbase-tools \
@@ -107,7 +107,7 @@ RDEPENDS_packagegroup-profile-graphics-qt5 = " \
 	qtimageformats \
 "
 
-RDEPENDS_packagegroup-profile-graphics-qt5-demos = " \
+RDEPENDS:packagegroup-profile-graphics-qt5-demos = " \
 	cinematicexperience \
 	qt5everywheredemo \
 	qt5ledscreen \
@@ -119,7 +119,7 @@ RDEPENDS_packagegroup-profile-graphics-qt5-demos = " \
         qt5-demo-extrafiles \
 "
 
-RDEPENDS_packagegroup-profile-graphics-gtk-demos = " \
+RDEPENDS:packagegroup-profile-graphics-gtk-demos = " \
 	gtk+3-demo \
 	gtk-demo \
 "

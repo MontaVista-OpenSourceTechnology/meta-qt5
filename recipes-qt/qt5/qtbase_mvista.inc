@@ -4,7 +4,7 @@ inherit multilib_script
 
 MULTILIB_SCRIPTS = "${PN}-tools:${bindir}/qt.conf"
 
-pkg_postinst_${PN}-tools () {
+pkg_postinst:${PN}-tools () {
 QTFILE=$D${bindir}/qt.conf
 if [ -e "$D${bindir}/qt.conf-${MULTILIB_SUFFIX}" ] ; then
    QTFILE=$D${bindir}/qt.conf-${MULTILIB_SUFFIX}
@@ -15,7 +15,7 @@ sed -i \
     $QTFILE
 }
 
-pkg_postinst_${PN}-mkspecs () {
+pkg_postinst:${PN}-mkspecs () {
 sed -i 's: cross_compile : :g' $D${OE_QMAKE_PATH_ARCHDATA}/mkspecs/qconfig.pri
 sed -i \
     -e 's: cross_compile : :g' \
