@@ -1,3 +1,7 @@
 inherit multilib_script
 
-MULTILIB_SCRIPTS = "${PN}-dev:${includedir}/QtQml/5.14.2/QtQml/private/qqmljsparser_p.h"
+python() {
+    d.setVar("VERSION",d.getVar("PV").split("+")[0])
+}
+
+MULTILIB_SCRIPTS = "${PN}-dev:${includedir}/QtQml/${VERSION}/QtQml/private/qqmljsparser_p.h"
