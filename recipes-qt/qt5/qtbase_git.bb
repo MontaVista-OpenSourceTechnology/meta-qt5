@@ -38,6 +38,7 @@ SRC_URI += "\
     file://0022-tst_qpainter-FE_-macros-are-not-defined-for-every-pl.patch \
     file://0023-eglfs-kms-Query-the-current-mode-correctly-via-the-e.patch \
     file://0024-eglfs_kms-Do-not-skip-the-initial-SetCrtc.patch \
+    file://CVE-2023-32762.patch \
 "
 
 # for syncqt
