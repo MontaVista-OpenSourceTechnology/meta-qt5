@@ -40,6 +40,7 @@ SRC_URI += "\
     file://0023-zlib-Do-not-undefine-_FILE_OFFSET_BITS.patch \
     file://CVE-2023-32762.patch \
     file://CVE-2023-32763.patch \
+    file://0026-QSslSocket-make-it-work-with-OpenSSL-v3.patch \
 "
 
 # Disable LTO for now, QT5 patches are being worked upstream, perhaps revisit with
