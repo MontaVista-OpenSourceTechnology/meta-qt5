@@ -40,6 +40,7 @@ SRC_URI += "\
     file://0024-eglfs_kms-Do-not-skip-the-initial-SetCrtc.patch \
     file://CVE-2023-32762.patch \
     file://CVE-2023-37369.patch \
+    file://CVE-2024-25580.patch \
 "
 
 # for syncqt
