@@ -41,6 +41,8 @@ SRC_URI += "\
     file://CVE-2023-32762.patch \
     file://CVE-2023-37369.patch \
     file://CVE-2024-25580.patch \
+    file://CVE-2023-51714-1.patch \
+    file://CVE-2023-51714-2.patch \
 "
 
 # for syncqt
