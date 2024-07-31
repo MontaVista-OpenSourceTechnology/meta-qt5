@@ -41,6 +41,9 @@ SRC_URI += "\
     file://CVE-2023-32762.patch \
     file://CVE-2023-32763.patch \
     file://0026-QSslSocket-make-it-work-with-OpenSSL-v3.patch \
+    file://CVE-2023-34410.patch \
+    file://CVE-2023-37369.patch \
+    file://CVE-2023-38197.patch \
 "
 
 # Disable LTO for now, QT5 patches are being worked upstream, perhaps revisit with
