@@ -19,6 +19,7 @@ SRC_URI += " \
     file://0002-Use-python3-explicitly.patch \
     file://0003-qv4regexp_p-needs-c-limits-include-instead-of-plain-.patch \
     file://0004-qqmlprofilerevent_p-needs-c-limits-inlcude-fixes-gcc.patch \
+    file://CVE-2022-43591.patch \
 "
 
 DEPENDS += "qtbase"
